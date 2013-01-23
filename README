@@ -1,0 +1,24 @@
+
+Link Text Renderer
+
+A tiddlyweb renderer that turns plain text into more plain text,
+but with WikiLinks, FreeLinks and URLs turned into HTML links.
+
+The goals is to write with the veracity and cogency that plain
+text provides, but still get the benefits of links
+
+See http://cdent.tiddlyspace.com/PlainTextWiki for the original
+record of this version of idea.
+
+To use add to wikitext.type_render_map in tiddlywebconfig.py:
+
+    'wikitext.type_render_map': {
+        'text/x-linkedtext': 'tiddlywebpugins.ltr',
+    },
+
+Note that the type is a stub. That might not be the right type.
+
+Or use the plugin as a system_plugin:
+
+    'system_plugins': ['tiddlywebplugins.ltr']
+
